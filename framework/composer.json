@@ -1,0 +1,33 @@
+{
+  "name": "dantech/php-framework",
+  "description": "framework hecho en casa",
+  "minimum-stability": "dev",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Daniel Guzman",
+      "email": "dnlguzman@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Dambo\\Framework\\" : "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Dambo\\Framework\\Tests\\" : "tests/"
+    }
+  },
+  "require-dev": {
+    "symfony/var-dumper": "7.1.x-dev",
+    "phpunit/phpunit": "^10.5.11@dev"
+  },
+  "require": {
+    "nikic/fast-route": "^2.0@dev",
+    "psr/container": "^2.0@dev",
+    "league/container": "^4.0.0",
+    "symfony/dotenv": "^6.0",
+    "twig/twig": "^3.0"
+  }
+}
